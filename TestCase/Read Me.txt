@@ -1,0 +1,7 @@
+1.  Install Python เวอร์ชั่นอะไรก็ได้ลงเครื่อง และเช็คผ่าน command prompt : python --version หากแสดงตัวเลขเวอร์ชั่นคือใช้ได้
+2. Install Robot Framework ผ่าน python ด้วยคำสั่ง pip install robotframework บน command prompt และใช้คำสั่ง robot --version เพื่อเช็คว่าลงสำเร็จหรือใหม่
+3.ติดตั้ง selenium library ผ่าน command prompt ด้วยคำสั่ง pip install robotframework-seleniumLibrary 
+4.ติดตั้ง web driver ผมใช้ google chrome ผมจึงลง chrome driver ปล.ลงให้ตรงกับเวอร์ชั่นของบราวเซอร์ที่ใช้นะครับ
+เป็นอันเสร็จสิ้น หลังจากนั้นก็สามารถสร้างโฟลเดอร์และไฟล์ของผมตั้งชื่อว่า TestVat.robot และเริ่มเขียนสคริปผ่าน VS Code ได้เลย
+
+โดยผมลองเขียน Test Case จากเว็บ https://www.itax.in.th/ มาประมาณ 10 กว่าเคส เพื่อลองเขียนสคริปดูครับ โดยเขียนไว้ในไฟล์ Excel ทั้งผลลัพที่คาดหวังและรูปภาพแคปเจอร์

@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.9.1 on win32)" generated="20211230 14:30:27.174" rpa="false" schemaversion="2">
+<suite id="s1" name="Testvat" source="C:\Users\Gergchai\Desktop\TestCase\testvat.robot">
+<test id="s1-t1" name="TC_01 User input valid data should display result correctly">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=https://www.itax.in.th/vat</arg>
+<arg>browser=googlechrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211230 14:30:27.322" level="INFO">Opening browser 'googlechrome' to base url 'https://www.itax.in.th/vat'.</msg>
+<status status="PASS" starttime="20211230 14:30:27.322" endtime="20211230 14:30:31.133"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211230 14:30:31.134" endtime="20211230 14:30:31.254"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>${data1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:31.256" level="INFO">Typing text '5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:31.255" endtime="20211230 14:30:31.364"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:32.376" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:31.365" endtime="20211230 14:30:32.376"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-cookie-consent/div/div/div/div[2]/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:32.377" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-cookie-consent/div/div/div/div[2]/img'.</msg>
+<status status="PASS" starttime="20211230 14:30:32.377" endtime="20211230 14:30:32.432"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:33.445" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:32.432" endtime="20211230 14:30:33.445"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:33.446" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:30:33.446" endtime="20211230 14:30:33.492"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:36.503" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:30:33.493" endtime="20211230 14:30:36.503"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_01.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:30:36.713" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_01.png"&gt;&lt;img src="TC_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:30:36.504" endtime="20211230 14:30:36.713"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:37.223" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:30:36.714" endtime="20211230 14:30:37.224"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:37.225" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:30:37.225" endtime="20211230 14:30:37.762"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:27.321" endtime="20211230 14:30:37.763"/>
+</test>
+<test id="s1-t2" name="TC_02 User input valid data should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=๕๐๐๐</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:37.764" level="INFO">Typing text 'Text=๕๐๐๐' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:37.764" endtime="20211230 14:30:37.831"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:38.832" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:37.831" endtime="20211230 14:30:38.832"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:38.834" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:30:38.833" endtime="20211230 14:30:38.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:41.995" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:30:38.994" endtime="20211230 14:30:41.995"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_02.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:30:42.185" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_02.png"&gt;&lt;img src="TC_02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:30:41.996" endtime="20211230 14:30:42.185"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:42.695" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:30:42.185" endtime="20211230 14:30:42.695"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:42.697" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:30:42.696" endtime="20211230 14:30:43.076"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:37.763" endtime="20211230 14:30:43.078"/>
+</test>
+<test id="s1-t3" name="TC_03 User input String data cloud not input data at field1">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=ห้าพันบาท</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:43.079" level="INFO">Typing text 'Text=ห้าพันบาท' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:43.079" endtime="20211230 14:30:43.158"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:44.170" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:43.159" endtime="20211230 14:30:44.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:44.171" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:30:44.171" endtime="20211230 14:30:44.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:47.343" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:30:44.330" endtime="20211230 14:30:47.343"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_03.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:30:47.531" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_03.png"&gt;&lt;img src="TC_03.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:30:47.343" endtime="20211230 14:30:47.532"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:48.043" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:30:47.532" endtime="20211230 14:30:48.043"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:48.043" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:30:48.043" endtime="20211230 14:30:48.526"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:43.079" endtime="20211230 14:30:48.526"/>
+</test>
+<test id="s1-t4" name="TC_04 User input float data should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:48.529" level="INFO">Typing text 'Text=5000.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:48.528" endtime="20211230 14:30:48.605"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:49.620" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:48.605" endtime="20211230 14:30:49.620"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:49.621" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:30:49.621" endtime="20211230 14:30:49.760"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:52.771" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:30:49.760" endtime="20211230 14:30:52.771"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_04.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:30:52.981" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_04.png"&gt;&lt;img src="TC_04.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:30:52.772" endtime="20211230 14:30:52.981"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:53.487" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:30:52.982" endtime="20211230 14:30:53.487"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:53.489" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:30:53.488" endtime="20211230 14:30:53.924"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:48.528" endtime="20211230 14:30:53.925"/>
+</test>
+<test id="s1-t5" name="TC_05 User change data at field2 the calculate cloud work properly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:53.927" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:53.926" endtime="20211230 14:30:54.004"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>8</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:54.006" level="INFO">Typing text '8' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:54.005" endtime="20211230 14:30:54.075"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:55.077" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:54.076" endtime="20211230 14:30:55.077"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:55.078" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:30:55.077" endtime="20211230 14:30:55.246"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:58.251" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:30:55.246" endtime="20211230 14:30:58.251"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_05.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:30:58.455" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_05.png"&gt;&lt;img src="TC_05.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:30:58.252" endtime="20211230 14:30:58.455"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:30:58.964" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:30:58.456" endtime="20211230 14:30:58.964"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:58.965" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:30:58.965" endtime="20211230 14:30:59.394"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:53.926" endtime="20211230 14:30:59.395"/>
+</test>
+<test id="s1-t6" name="TC_06 User input Thai number at field2 the calculate cloud work properly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:59.396" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:59.396" endtime="20211230 14:30:59.475"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>๘</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:30:59.476" level="INFO">Typing text '๘' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:30:59.475" endtime="20211230 14:30:59.542"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:00.557" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:30:59.542" endtime="20211230 14:31:00.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:00.559" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:00.558" endtime="20211230 14:31:00.751"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:03.766" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:00.751" endtime="20211230 14:31:03.766"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_06.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:03.995" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_06.png"&gt;&lt;img src="TC_06.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:03.767" endtime="20211230 14:31:03.995"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:04.510" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:03.996" endtime="20211230 14:31:04.510"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:04.511" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:04.511" endtime="20211230 14:31:04.938"/>
+</kw>
+<status status="PASS" starttime="20211230 14:30:59.396" endtime="20211230 14:31:04.938"/>
+</test>
+<test id="s1-t7" name="TC_07 User input String data at field2 the calculate cloud not work">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:04.940" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:04.940" endtime="20211230 14:31:05.021"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>แปด</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:05.023" level="INFO">Typing text 'แปด' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:05.022" endtime="20211230 14:31:05.090"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:06.106" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:05.090" endtime="20211230 14:31:06.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:06.107" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:06.107" endtime="20211230 14:31:06.253"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:09.263" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:06.253" endtime="20211230 14:31:09.263"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_07.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:09.444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_07.png"&gt;&lt;img src="TC_07.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:09.264" endtime="20211230 14:31:09.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:09.948" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:09.446" endtime="20211230 14:31:09.948"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:09.950" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:09.949" endtime="20211230 14:31:10.358"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:04.939" endtime="20211230 14:31:10.359"/>
+</test>
+<test id="s1-t8" name="TC_08 User input float data at field2 should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:10.360" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:10.360" endtime="20211230 14:31:10.436"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>8.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:10.437" level="INFO">Typing text '8.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:10.437" endtime="20211230 14:31:10.512"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:11.521" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:10.513" endtime="20211230 14:31:11.521"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:11.523" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:11.523" endtime="20211230 14:31:11.686"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:14.696" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:11.687" endtime="20211230 14:31:14.696"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_08.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:14.874" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_08.png"&gt;&lt;img src="TC_08.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:14.696" endtime="20211230 14:31:14.874"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:15.388" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:14.875" endtime="20211230 14:31:15.388"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:15.389" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:15.389" endtime="20211230 14:31:15.814"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:10.360" endtime="20211230 14:31:15.815"/>
+</test>
+<test id="s1-t9" name="TC_09 User change data at field3 the calculate cloud work properly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:15.817" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:15.817" endtime="20211230 14:31:15.901"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>8.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:15.902" level="INFO">Typing text '8.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:15.902" endtime="20211230 14:31:15.972"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:15.973" level="INFO">Typing text '5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:15.972" endtime="20211230 14:31:16.032"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:17.044" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:16.032" endtime="20211230 14:31:17.044"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:17.046" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:17.045" endtime="20211230 14:31:17.232"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:20.242" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:17.233" endtime="20211230 14:31:20.242"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_09.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:20.399" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_09.png"&gt;&lt;img src="TC_09.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:20.242" endtime="20211230 14:31:20.400"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:20.908" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:20.400" endtime="20211230 14:31:20.908"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:20.909" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:20.908" endtime="20211230 14:31:21.323"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:15.816" endtime="20211230 14:31:21.324"/>
+</test>
+<test id="s1-t10" name="TC_10 User input Thai number at field3 the calculate cloud work properly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:21.327" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:21.326" endtime="20211230 14:31:21.397"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:21.398" level="INFO">Typing text '7' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:21.397" endtime="20211230 14:31:21.472"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>๕</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:21.473" level="INFO">Typing text '๕' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:21.472" endtime="20211230 14:31:21.533"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:22.534" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:21.534" endtime="20211230 14:31:22.534"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:22.534" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:22.534" endtime="20211230 14:31:22.687"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:25.691" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:22.689" endtime="20211230 14:31:25.691"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_10.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:25.879" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_10.png"&gt;&lt;img src="TC_10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:25.691" endtime="20211230 14:31:25.879"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:26.389" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:25.880" endtime="20211230 14:31:26.389"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:26.389" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:26.389" endtime="20211230 14:31:26.828"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:21.326" endtime="20211230 14:31:26.829"/>
+</test>
+<test id="s1-t11" name="TC_11 User input String data at field3 the calculate cloud not work">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:26.831" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:26.830" endtime="20211230 14:31:26.921"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:26.922" level="INFO">Typing text '7' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:26.921" endtime="20211230 14:31:26.986"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>five</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:26.986" level="INFO">Typing text 'five' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:26.986" endtime="20211230 14:31:27.184"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:28.194" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:27.185" endtime="20211230 14:31:28.194"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:28.196" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:28.195" endtime="20211230 14:31:28.318"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:31.321" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:28.318" endtime="20211230 14:31:31.321"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_11.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:31.480" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_11.png"&gt;&lt;img src="TC_11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:31.322" endtime="20211230 14:31:31.480"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:31.991" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:31.481" endtime="20211230 14:31:31.991"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:31.993" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:31.992" endtime="20211230 14:31:32.837"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:26.830" endtime="20211230 14:31:32.837"/>
+</test>
+<test id="s1-t12" name="TC_12 User input float data at field3 should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:32.839" level="INFO">Typing text 'Text=5000' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:32.839" endtime="20211230 14:31:32.911"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>7</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:32.912" level="INFO">Typing text '7' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:32.911" endtime="20211230 14:31:32.971"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>5.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:32.972" level="INFO">Typing text '5.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:32.972" endtime="20211230 14:31:33.116"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:34.132" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:33.117" endtime="20211230 14:31:34.132"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:34.133" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:34.132" endtime="20211230 14:31:34.257"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:37.273" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:34.258" endtime="20211230 14:31:37.273"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_12.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:37.422" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_12.png"&gt;&lt;img src="TC_12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:37.273" endtime="20211230 14:31:37.422"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:37.926" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:37.423" endtime="20211230 14:31:37.926"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:37.928" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:37.927" endtime="20211230 14:31:38.366"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:32.838" endtime="20211230 14:31:38.366"/>
+</test>
+<test id="s1-t13" name="TC_13 User input float data at field1 and field 2 should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:38.368" level="INFO">Typing text 'Text=5000.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:38.368" endtime="20211230 14:31:38.476"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>7.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:38.477" level="INFO">Typing text '7.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:38.477" endtime="20211230 14:31:38.651"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:38.652" level="INFO">Typing text '5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:38.651" endtime="20211230 14:31:38.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:39.717" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:38.713" endtime="20211230 14:31:39.718"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:39.718" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:39.718" endtime="20211230 14:31:39.882"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:42.897" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:39.883" endtime="20211230 14:31:42.897"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_13.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:43.080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_13.png"&gt;&lt;img src="TC_13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:42.898" endtime="20211230 14:31:43.081"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:43.592" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:43.082" endtime="20211230 14:31:43.592"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:43.592" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:43.592" endtime="20211230 14:31:44.016"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:38.368" endtime="20211230 14:31:44.016"/>
+</test>
+<test id="s1-t14" name="TC_14 User input float data at field1, field2 and field3 should display result correctly">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field1}</arg>
+<arg>Text=5000.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:44.018" level="INFO">Typing text 'Text=5000.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[2]/app-input-number/div/div/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:44.018" endtime="20211230 14:31:44.108"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field2}</arg>
+<arg>7.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:44.109" level="INFO">Typing text '7.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[3]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:44.108" endtime="20211230 14:31:44.308"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field3}</arg>
+<arg>5.5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:44.309" level="INFO">Typing text '5.5' into text field 'xpath=/html/body/app-root/app-landing-page/div/app-calculator/div/div/div[2]/div/div[1]/app-calculate-box/div/div/form/div[4]/div[2]/div/input'.</msg>
+<status status="PASS" starttime="20211230 14:31:44.308" endtime="20211230 14:31:44.388"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:45.404" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:44.388" endtime="20211230 14:31:45.404"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary btn-block py-12px']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:45.405" level="INFO">Clicking element 'xpath=//button[@class='btn btn-primary btn-block py-12px']'.</msg>
+<status status="PASS" starttime="20211230 14:31:45.404" endtime="20211230 14:31:45.558"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:48.564" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211230 14:31:45.559" endtime="20211230 14:31:48.564"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>C:/Users/Gergchai/Desktop/TestCase/TC_14.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211230 14:31:48.722" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="TC_14.png"&gt;&lt;img src="TC_14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211230 14:31:48.565" endtime="20211230 14:31:48.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:49.229" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211230 14:31:48.723" endtime="20211230 14:31:49.229"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211230 14:31:49.230" level="INFO">Clicking element 'xpath=/html/body/app-root/app-landing-page/div/app-calculator-result/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211230 14:31:49.229" endtime="20211230 14:31:49.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211230 14:31:50.652" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211230 14:31:49.641" endtime="20211230 14:31:50.652"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211230 14:31:50.653" endtime="20211230 14:31:52.848"/>
+</kw>
+<status status="PASS" starttime="20211230 14:31:44.017" endtime="20211230 14:31:52.849"/>
+</test>
+<status status="PASS" starttime="20211230 14:30:27.175" endtime="20211230 14:31:52.850"/>
+</suite>
+<statistics>
+<total>
+<stat pass="14" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="14" fail="0" skip="0" id="s1" name="Testvat">Testvat</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
